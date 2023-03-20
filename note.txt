@@ -1,0 +1,33 @@
+# Deploy #
+
+1. Standard build 
+
+    - next build
+
+2. Full stattic build
+
+- next export 
+
+* Sdece server side kodu gererktirmeyen yerlerde iyi çalışır.
+
+- package.json --> 'scripts' --> export : next export ==> isimlendirme opsiyonel
+
+* %100 static. Sadece HTML, CSS, JS 
+* NodeJS sunucusuna ihtiyaç yok
+
+* API routes, server-side pages, page revalidation varsa bunu kullanmak zordur.
+* Bunları yürütmek için kod gerekir. Sunucu yoksa zordur.
+
+# process.env (undefined) error için 
+
+next.config.js 'ye env eklemesi yapıldıktan sonra tekrardan başlatılması gererkir.
+
+https://stackoverflow.com/questions/66137368/next-js-environment-variables-are-undefined-next-js-10-0-5
+
+
+# Büyük boyuttaki sayfaları optimize etme.
+
+--> post/[slug]  --> postContent
+
+- Bu tür sayfalar için import edilen paketlerin light sürümleri kullanılablir.
+https://github.com/react-syntax-highlighter/react-syntax-highlighter#light-build
