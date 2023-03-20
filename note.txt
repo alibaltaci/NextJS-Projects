@@ -31,3 +31,10 @@ https://stackoverflow.com/questions/66137368/next-js-environment-variables-are-u
 
 - Bu tür sayfalar için import edilen paketlerin light sürümleri kullanılablir.
 https://github.com/react-syntax-highlighter/react-syntax-highlighter#light-build
+
+
+# Vercel 
+
+ * MongoDB üzerinden tüm IP erişimlerine izin vermemiz gerekir.
+ * Bu sayede erişilen makinelerden gönderim yapılabilir.
+ * Hala kullanıcı adı ve şifre korumasına sahip oluyoruz.
