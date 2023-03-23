@@ -5,7 +5,7 @@ export default function Hero(){
 
     // image için URL döndürelim
     const myLoader = ({ src, width, quality }) => {
-        return `http://localhost:3000/${src}?w=${width}&q=${quality || 75}`
+        return `https://ali-baltaci-blog.vercel.app/${src}?w=${width}&q=${quality || 75}`
       }
 
     // İşlemden önce URL: src="/_next/image?url=%2Fimages%2Fsite%2Fali_image.JPG&w=640&q=75"
