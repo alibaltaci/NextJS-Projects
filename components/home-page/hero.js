@@ -16,7 +16,7 @@ export default function Hero(){
         <section className={ classes.hero }>
             <div className={ classes.image } >
                 <Image
-                    loader={myLoader} 
+                    // loader={myLoader} 
                     src='/images/site/ali_image.JPG' 
                     alt='My image' 
                     height={300} 
