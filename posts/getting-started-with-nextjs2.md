@@ -3,7 +3,7 @@ title: 'Getting Started with NextJS - 2'
 date: '2022-10-16'
 image: 'getting-started-nextjs.jpg'
 excerpt: 'NextJS is a the React framework for production - It makes building fullstack React apps and sites a breeze and ships with build-in SSR'
-isFeatured: true
+isFeatured: false
 ---
 
 # This is a title - 2
