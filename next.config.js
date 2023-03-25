@@ -2,9 +2,11 @@ const { PHASE_DEVELOPMENT_SERVER } = require('next/constants')
 
 module.exports = (phase) =>  {
 
+    // geliştirme aşamasında olup olmadığmızı kontrol edip ona uygun verileri döndürüyoruz.
+
     if( phase === PHASE_DEVELOPMENT_SERVER ){
 
-        // geliştirme aşamasında olup olmadığmızı kontrol edip ona uygun verileri döndürüyoruz.
+        // geliştirme aşaması için
         return{
             env:{
                 mongodb_username: 'ali',
@@ -15,6 +17,7 @@ module.exports = (phase) =>  {
         }
     }
     
+    // canlıda 
     return{
         env:{
             mongodb_username: 'ali',
