@@ -1,0 +1,29 @@
+{
+    "navbar":[
+        {
+            "id":1,
+            "page":"Anasayfa",
+            "route": "/"
+        },
+        {
+            "id":2,
+            "page":"Hakkımızda",
+            "route": "/about"
+        },
+        {
+            "id":3,
+            "page":"İletişim",
+            "route": "/contact"
+        },
+        {
+            "id":4,
+            "page":"İncelemeler",
+            "route": "/reviews"
+        },
+        {
+            "id":5,
+            "page":"Haberler",
+            "route": "/news"
+        }
+    ]
+}
