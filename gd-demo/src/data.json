@@ -25,5 +25,343 @@
             "page":"Haberler",
             "route": "/news"
         }
-    ]
+    ],
+
+    "home":{
+        "categoriesData": {
+            "categoriesTitle": "Kategoriler",
+            "categories": [
+              {
+                "category": "Sponsorlu",
+                "icon": "⭐",
+                "color": "from-purple-400 to-indigo-500"
+              },
+              {
+                "category": "Hijyen",
+                "icon": "🧼",
+                "color": "from-blue-400 to-cyan-500"
+              },
+              {
+                "category": "Sebze",
+                "icon": "🥦",
+                "color": "from-green-400 to-lime-500"
+              },
+              {
+                "category": "İçecek",
+                "icon": "🥤",
+                "color": "from-yellow-400 to-amber-500"
+              },
+              {
+                "category": "Temizlik",
+                "icon": "🧹",
+                "color": "from-orange-400 to-red-500"
+              },
+              {
+                "category": "Meyve",
+                "icon": "🍎",
+                "color": "from-red-400 to-pink-500"
+              },
+              {
+                "category": "Et ürünleri",
+                "icon": "🍖",
+                "color": "from-pink-400 to-rose-500"
+              },
+              {
+                "category": "Süt ve Süt ürünleri",
+                "icon": "🥛",
+                "color": "from-fuchsia-400 to-purple-500"
+              },
+              {
+                "category": "Atıştırmalıklar",
+                "icon": "🍿",
+                "color": "from-indigo-400 to-blue-500"
+              },
+              {
+                "category": "Tatlılar",
+                "icon": "🍰",
+                "color": "from-cyan-400 to-teal-500"
+              }
+            ]
+        },
+
+        "userComments":[
+
+        ]
+    },
+
+    "newsData":{
+      "pageTitle":"Haberler",
+      "news": [
+        {
+          "title": "Sağlıklı Beslenme Rehberi",
+          "imgUrl": "/news2.jpg",
+          "date": "2024-06-28",
+          "read": "345",
+          "like": "120",
+          "dislike": "5",
+          "editor": "Ahmet Yılmaz",
+          "editorImg": "/e1.jpg",
+          "content": "Sağlıklı beslenmenin önemi ve günlük hayatımızda dikkat etmemiz gereken püf noktaları hakkında detaylı bilgiler.",
+          "tags": ["beslenme", "sağlık", "gıda"]
+        },
+        {
+          "title": "Organik Gıdaların Faydaları",
+          "imgUrl": "/news2.jpg",
+          "date": "2024-06-27",
+          "read": "290",
+          "like": "98",
+          "dislike": "7",
+          "editor": "Elif Demir",
+          "editorImg": "/e2.jpg",
+          "content": "Organik gıdaların sağlığımıza olan etkileri ve piyasadaki organik ürünler hakkında bilgiler.",
+          "tags": ["organik", "gıda", "sağlık"]
+        },
+        {
+          "title": "Gıda İsrafını Azaltmanın Yolları",
+          "imgUrl": "/news2.jpg",
+          "date": "2024-06-26",
+          "read": "410",
+          "like": "150",
+          "dislike": "3",
+          "editor": "Mehmet Kaya",
+          "editorImg": "/e1.jpg",
+          "content": "Gıda israfını nasıl azaltabiliriz? Bu konuda evde ve dışarıda alabileceğimiz önlemler.",
+          "tags": ["gıda", "israf", "tasarruf"]
+        },
+        {
+          "title": "Evde Doğal Temizlik Ürünleri Yapımı",
+          "imgUrl": "/news2.jpg",
+          "date": "2024-06-25",
+          "read": "250",
+          "like": "80",
+          "dislike": "10",
+          "editor": "Ayşe Güzel",
+          "editorImg": "/e2.jpg",
+          "content": "Kimyasal temizlik ürünleri yerine evde kolayca yapabileceğiniz doğal temizlik ürünleri tarifleri.",
+          "tags": ["temizlik", "doğal", "sağlık"]
+        },
+        {
+          "title": "Sağlıklı Atıştırmalık Tarifleri",
+          "imgUrl": "/news2.jpg",
+          "date": "2024-06-24",
+          "read": "320",
+          "like": "110",
+          "dislike": "6",
+          "editor": "Canan Sarı",
+          "editorImg": "/e2.jpg",
+          "content": "Evde kolayca hazırlayabileceğiniz sağlıklı ve lezzetli atıştırmalık tarifleri.",
+          "tags": ["atıştırmalık", "tarif", "sağlık"]
+        },
+        {
+          "title": "Mevsim Meyveleri ve Sebzeleri",
+          "imgUrl": "/news2.jpg",
+          "date": "2024-06-23",
+          "read": "380",
+          "like": "130",
+          "dislike": "4",
+          "editor": "Fatma Öz",
+          "editorImg": "/e2.jpg",
+          "content": "Mevsiminde tüketilmesi gereken meyve ve sebzeler ve bunların faydaları hakkında bilgiler.",
+          "tags": ["meyve", "sebze", "mevsim"]
+        },
+        {
+          "title": "Gıda Etiketlerini Doğru Okuma Rehberi",
+          "imgUrl": "/news2.jpg",
+          "date": "2024-06-22",
+          "read": "270",
+          "like": "90",
+          "dislike": "8",
+          "editor": "Murat Çelik",
+          "editorImg": "/e1.jpg",
+          "content": "Gıda etiketlerinde dikkat edilmesi gereken noktalar ve etiket okuma rehberi.",
+          "tags": ["gıda", "etiket", "rehber"]
+        },
+        {
+          "title": "Evde Yoğurt Yapımı",
+          "imgUrl": "/news2.jpg",
+          "date": "2024-06-21",
+          "read": "300",
+          "like": "100",
+          "dislike": "5",
+          "editor": "Zeynep Aydın",
+          "editorImg": "/e2.jpg",
+          "content": "Evde yoğurt yapmanın püf noktaları ve tarifleri hakkında bilgiler.",
+          "tags": ["yoğurt", "evde", "tarif"]
+        },
+        {
+          "title": "Çocuklar İçin Sağlıklı Beslenme Önerileri",
+          "imgUrl": "/news2.jpg",
+          "date": "2024-06-20",
+          "read": "360",
+          "like": "125",
+          "dislike": "6",
+          "editor": "Deniz Yıldız",
+          "editorImg": "/e2.jpg",
+          "content": "Çocukların sağlıklı beslenmesi için dikkat edilmesi gereken noktalar ve öneriler.",
+          "tags": ["çocuk", "beslenme", "sağlık"]
+        },
+        {
+          "title": "Evde Ekmek Yapımı",
+          "imgUrl": "/news2.jpg",
+          "date": "2024-06-19",
+          "read": "410",
+          "like": "140",
+          "dislike": "5",
+          "editor": "Ali Vural",
+          "editorImg": "/e1.jpg",
+          "content": "Evde ekmek yapmanın kolay yolları ve çeşitli ekmek tarifleri.",
+          "tags": ["ekmek", "evde", "tarif"]
+        }
+        ]
+    },
+
+    "reviewsData":{
+      "pageTitle": "İncelemeler",
+      "reviews": [
+        {
+          "title": "Gıda Hijyen Ürünü İncelemesi 1",
+          "imgUrl": "/review1.jpg",
+          "date": "2024-07-01",
+          "read": "250",
+          "like": "80",
+          "dislike": "10",
+          "editor": "Ahmet Yılmaz",
+          "editorImg": "/e1.jpg",
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod commodo augue eget varius. Integer vehicula nisl non turpis varius, in luctus nulla vulputate. Proin sit amet accumsan sem. Nullam euismod interdum dolor, id ultricies est facilisis eget.",
+          "tags": ["gıda", "hijyen", "ürün"]
+        },
+        {
+          "title": "Gıda Hijyen Ürünü İncelemesi 2",
+          "imgUrl": "/review1.jpg",
+          "date": "2024-06-30",
+          "read": "320",
+          "like": "110",
+          "dislike": "6",
+          "editor": "Elif Demir",
+          "editorImg": "/e2.jpg",
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod commodo augue eget varius. Integer vehicula nisl non turpis varius, in luctus nulla vulputate. Proin sit amet accumsan sem. Nullam euismod interdum dolor, id ultricies est facilisis eget.",
+          "tags": ["gıda", "hijyen", "ürün"]
+        },
+        {
+          "title": "Gıda Hijyen Ürünü İncelemesi 3",
+          "imgUrl": "/review1.jpg",
+          "date": "2024-06-29",
+          "read": "300",
+          "like": "100",
+          "dislike": "5",
+          "editor": "Mehmet Kaya",
+          "editorImg": "/e1.jpg",
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod commodo augue eget varius. Integer vehicula nisl non turpis varius, in luctus nulla vulputate. Proin sit amet accumsan sem. Nullam euismod interdum dolor, id ultricies est facilisis eget.",
+          "tags": ["gıda", "hijyen", "ürün"]
+        },
+        {
+          "title": "Gıda Hijyen Ürünü İncelemesi 4",
+          "imgUrl": "/review1.jpg",
+          "date": "2024-06-28",
+          "read": "280",
+          "like": "90",
+          "dislike": "8",
+          "editor": "Ayşe Yılmaz",
+          "editorImg": "/e2.jpg",
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod commodo augue eget varius. Integer vehicula nisl non turpis varius, in luctus nulla vulputate. Proin sit amet accumsan sem. Nullam euismod interdum dolor, id ultricies est facilisis eget.",
+          "tags": ["gıda", "hijyen", "ürün"]
+        },
+        {
+          "title": "Gıda Hijyen Ürünü İncelemesi 5",
+          "imgUrl": "/review1.jpg",
+          "date": "2024-06-27",
+          "read": "270",
+          "like": "85",
+          "dislike": "7",
+          "editor": "Canan Demir",
+          "editorImg": "/e2.jpg",
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod commodo augue eget varius. Integer vehicula nisl non turpis varius, in luctus nulla vulputate. Proin sit amet accumsan sem. Nullam euismod interdum dolor, id ultricies est facilisis eget.",
+          "tags": ["gıda", "hijyen", "ürün"]
+        },
+        {
+          "title": "Gıda Hijyen Ürünü İncelemesi 6",
+          "imgUrl": "/review1.jpg",
+          "date": "2024-06-26",
+          "read": "310",
+          "like": "95",
+          "dislike": "9",
+          "editor": "Ali Kaya",
+          "editorImg": "/e1.jpg",
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod commodo augue eget varius. Integer vehicula nisl non turpis varius, in luctus nulla vulputate. Proin sit amet accumsan sem. Nullam euismod interdum dolor, id ultricies est facilisis eget.",
+          "tags": ["gıda", "hijyen", "ürün"]
+        },
+        {
+          "title": "Gıda Hijyen Ürünü İncelemesi 7",
+          "imgUrl": "/review1.jpg",
+          "date": "2024-06-25",
+          "read": "290",
+          "like": "88",
+          "dislike": "6",
+          "editor": "Ece Yıldız",
+          "editorImg": "/e2.jpg",
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod commodo augue eget varius. Integer vehicula nisl non turpis varius, in luctus nulla vulputate. Proin sit amet accumsan sem. Nullam euismod interdum dolor, id ultricies est facilisis eget.",
+          "tags": ["gıda", "hijyen", "ürün"]
+        },
+        {
+          "title": "Gıda Hijyen Ürünü İncelemesi 8",
+          "imgUrl": "/review1.jpg",
+          "date": "2024-06-24",
+          "read": "330",
+          "like": "102",
+          "dislike": "8",
+          "editor": "Burak Demir",
+          "editorImg": "/e1.jpg",
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod commodo augue eget varius. Integer vehicula nisl non turpis varius, in luctus nulla vulputate. Proin sit amet accumsan sem. Nullam euismod interdum dolor, id ultricies est facilisis eget.",
+          "tags": ["gıda", "hijyen", "ürün"]
+        },
+        {
+          "title": "Gıda Hijyen Ürünü İncelemesi 9",
+          "imgUrl": "/review1.jpg",
+          "date": "2024-06-23",
+          "read": "300",
+          "like": "96",
+          "dislike": "7",
+          "editor": "Deniz Kaya",
+          "editorImg": "/e2.jpg",
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod commodo augue eget varius. Integer vehicula nisl non turpis varius, in luctus nulla vulputate. Proin sit amet accumsan sem. Nullam euismod interdum dolor, id ultricies est facilisis eget.",
+          "tags": ["gıda", "hijyen", "ürün"]
+        },
+        {
+          "title": "Gıda Hijyen Ürünü İncelemesi 10",
+          "imgUrl": "/review1.jpg",
+          "date": "2024-06-22",
+          "read": "280",
+          "like": "92",
+          "dislike": "5",
+          "editor": "Funda Yılmaz",
+          "editorImg": "/e1.jpg",
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod commodo augue eget varius. Integer vehicula nisl non turpis varius, in luctus nulla vulputate. Proin sit amet accumsan sem. Nullam euismod interdum dolor, id ultricies est facilisis eget.",
+          "tags": ["gıda", "hijyen", "ürün"]
+        }
+      ]
+    },
+
+    "contact":{
+      "pageTitle": "İletişim",
+      "address":{
+        "title": "Gıda Dedektifi Ofis",
+        "content":[
+          "Murat Reis Mah. Selamet Sk.",
+          "Kamara Studio Offices No:9/1",
+          "Üsküdar, İstanbul"
+        ]
+      },
+      "mailData":{
+        "title":"Bizimle iletişime geçmek için mail adresimiz:",
+        "mail": "info@gidadedektifi.com",
+        "route": "mailto:info@gidadedektifi.com"
+      },
+      "map":{
+        "url":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3060.7284842205524!2d29.041186776148875!3d41.02465212205344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac832ca7c5c13%3A0x5c8eb7d8c5f39c9a!2sKamara%20Studio%20Offices%20%C3%9Csk%C3%BCdar!5e0!3m2!1str!2str!4v1688117185676!5m2!1str!2str"
+      }
+    }
+    
+
+
+
 }

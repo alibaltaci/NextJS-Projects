@@ -6,8 +6,7 @@ export const MenuButton = () => {
   const { setIsOpen, isOpen } = useNavbarContext()
 
   return (
-    <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-      {/* Mobile menu button */}
+    <div className="absolute inset-y-0 right-0 flex items-center md:hidden">
       <button
         onClick={() => setIsOpen(!isOpen)}
         type="button"

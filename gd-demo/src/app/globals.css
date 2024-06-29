@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 body{
-  background-color: #ffffff;
+  background-color: #374151
+  /* background-color: #fff */
 }
 
 .red-gradient {
