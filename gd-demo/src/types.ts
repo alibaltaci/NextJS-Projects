@@ -1,7 +1,14 @@
 import { ReactNode } from "react";
 
+// COMMON
+
 export interface IChildren {
     children: ReactNode
+}
+
+export interface IconReturnerProps {
+  icon: string
+  url?: string
 }
 
 // NAVBAR
@@ -31,6 +38,10 @@ export interface ICategory {
 export interface ICategoriesData {
     categoriesTitle: string
     categories: ICategory[]
+}
+
+export interface IIcons {
+  [key: string]: () => JSX.Element 
 }
 
 // NEWS
@@ -72,3 +83,14 @@ export interface IReviewsData {
     pageTitle: string;
     reviews: IReview[];
   };
+
+//   FOOTER
+
+export interface SocialMedia {
+    platform: string;
+    url: string;
+  }
+  
+  export interface Footer {
+    socialMedia: SocialMedia[];
+  }

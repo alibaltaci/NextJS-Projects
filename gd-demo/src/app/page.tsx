@@ -1,5 +1,4 @@
-import { Categories, Hero, LatestReviews } from "@/components";
-import { LatestNews } from "@/components/home/latestNews/LatestNews";
+import { Categories, Hero, LatestNews, LatestReviews } from "@/components";
 
 export default function Home() {
   return (
