@@ -1,4 +1,4 @@
-import { Categories, Hero } from "@/components";
+import { Categories, Hero, LatestReviews } from "@/components";
 import { LatestNews } from "@/components/home/latestNews/LatestNews";
 
 export default function Home() {
@@ -6,6 +6,7 @@ export default function Home() {
     <>
       <Hero />
       <Categories />
+      <LatestReviews />
       <LatestNews />
     </>
 
