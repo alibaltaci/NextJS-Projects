@@ -11,6 +11,23 @@ export interface IconReturnerProps {
   url?: string
 }
 
+// not found page
+interface NotFoundLayoutData {
+  general: {
+    message: string;
+  };
+  reviewNotFoundPage: {
+    message: string;
+  };
+  newsNotFoundPage: {
+    message: string;
+  };
+}
+
+interface CommonData {
+  notFoundLayoutData: NotFoundLayoutData;
+}
+
 // NAVBAR
 
 export interface INavbar {

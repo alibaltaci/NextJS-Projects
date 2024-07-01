@@ -19,8 +19,8 @@ const ReviewDetailPage = ({ params }: { params: { reviewDetail: string } }) => {
     const reviewItem = reviewsData.reviews.find((review) => review.title === decodedTitle)
 
     if (!reviewItem) {
-        return <div className='mt-16'>Ürün bulunamadı</div>;
-        // return notFound(); 
+        // return <div className='mt-16'>Ürün bulunamadı</div>
+        return notFound(); 
     }
 
     const { title, imgUrl, editorImg, editor, date, content, read, like, dislike, tags } = reviewItem

@@ -13,18 +13,16 @@ export async function generateStaticParams() {
 }
 
 const NewsDetailPage = ({ params }: { params: { newsDetail: string } }) => {
-    const { newsDetail } = params;
-    // URL-encoded title'ı çözüyoruz
-    const decodedTitle = decodeURIComponent(newsDetail); 
 
-    // console.log("News Detail Param:", newsDetail);
+    const { newsDetail } = params;
+    
+    const decodedTitle = decodeURIComponent(newsDetail); 
     
     const newsItem = newsData.news.find((news) => news.title === decodedTitle);
 
     if (!newsItem) {
-        console.error("News item not found for:", newsDetail);
-        return <div className='mt-16'>Haber bulunamadı</div>;
-        // return notFound(); 
+        // return <div className='mt-16'>Haber bulunamadı</div>;
+        return notFound(); 
     }
 
     return (

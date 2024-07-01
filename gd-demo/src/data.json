@@ -501,6 +501,20 @@
           "url": "https://www.instagram.com/gidadedektifi/"
         }
       ]
+    },
+
+    "commonData":{
+      "notFoundLayoutData":{
+        "generalNotFoundPage":{
+          "message": "Sayfa Bulunamadı!"
+        },
+        "reviewNotFoundPage":{
+          "message":"İnceleme Bulunamadı!"
+        },
+        "newsNotFoundPage":{
+          "message":"Haber Bulunamadı!"
+        }
+      }
     }
 
 }
