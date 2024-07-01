@@ -8,7 +8,7 @@ const NewsPage = () => {
     <h2 className="text-3xl font-bold mb-6">{newsData.pageTitle}</h2>
     <div className="flex flex-wrap -mx-4">
         {newsData.news.map((news, index) => (
-            <Link key={index} href={`/news/${news.title}`} className="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
+            <Link key={index} href="/news/[slug]" as={`/news/${encodeURIComponent(news.title)}`} className="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
                 <div className="bg-white p-6 rounded-lg shadow-lg h-full flex flex-col justify-between">
                     <Image src={news.imgUrl} alt={news.title} width={400} height={200} className="w-full h-40 object-cover rounded-t-lg mb-4" />
                     <div className="flex flex-col justify-between flex-grow">
