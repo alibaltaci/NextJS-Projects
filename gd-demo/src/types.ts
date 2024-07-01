@@ -98,7 +98,7 @@ export interface IReview {
 }
 
 export interface IReviewsData {
-    pageTitle: string;
+    pageTitle?: string;
     reviews: IReview[];
   };
 

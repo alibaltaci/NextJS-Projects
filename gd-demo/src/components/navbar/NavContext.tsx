@@ -1,7 +1,7 @@
 "use client"
 
 import { createContext, useContext, useState } from "react"
-import {navbar} from "../../data.json"
+import {navbar} from "@/data.json"
 import { IChildren, INavbarContext } from "@/types"
 
 const initialNavbarContext: INavbarContext = {

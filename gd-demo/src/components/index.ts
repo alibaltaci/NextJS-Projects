@@ -4,6 +4,7 @@ import { Navbar } from "./navbar";
 import { Reviews } from "./reviews/reviews";
 import { IconReturner } from "./icons/IconReturner";
 import { NotFoundLayout } from "./notFoundLayout/NotFoundLayout";
+import SuspenseComponent from "./suspense/Suspense";
 
 export {
     Navbar,
@@ -14,5 +15,6 @@ export {
     Reviews,
     IconReturner,
     Footer,
-    NotFoundLayout
+    NotFoundLayout,
+    SuspenseComponent
 }

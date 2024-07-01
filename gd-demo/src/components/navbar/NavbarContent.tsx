@@ -14,7 +14,6 @@ export const NavbarContent = () => {
             </div>
         </div>
 
-        {/* Mobile menu, show/hide based on menu state */}
         {isOpen && <MobileMenu /> }
     </nav>
   )
