@@ -1,7 +1,6 @@
 import Image from 'next/image';
-import { newsData } from "@/data.json";
+import { newsData } from "../../../data.json";
 import { notFound } from 'next/navigation';
-import { SuspenseComponent } from '@/components';
 
 export async function generateStaticParams() {
     const paths = newsData.news.map((news) => ({
@@ -13,13 +12,13 @@ export async function generateStaticParams() {
     return paths;
 }
 
-const NewsDetailPage = async ({ params }: { params: { newsDetail: string } }) => {
+const NewsDetailPage = ({ params }: { params: { newsDetail: string } }) => {
 
     const { newsDetail } = params;
     
-    const decodedTitle = await decodeURIComponent(newsDetail); 
+    const decodedTitle = decodeURIComponent(newsDetail); 
     
-    const newsItem = await newsData.news.find((news) => news.title === decodedTitle);
+    const newsItem = newsData.news.find((news) => news.title === decodedTitle);
 
     if (!newsItem) {
         // return <div className='mt-16'>Haber bulunamadı</div>;
@@ -27,7 +26,6 @@ const NewsDetailPage = async ({ params }: { params: { newsDetail: string } }) =>
     }
 
     return (
-        <SuspenseComponent>
         <section className="container mx-auto px-4 py-8 mt-16">
             <h1 className="text-4xl font-bold mb-4">{newsItem.title}</h1>
             <Image src={newsItem.imgUrl} alt={newsItem.title} width={800} height={400} className="w-full h-96 object-cover rounded-t-lg mb-4" />
@@ -52,7 +50,6 @@ const NewsDetailPage = async ({ params }: { params: { newsDetail: string } }) =>
                 ))}
             </div>
         </section>
-        </SuspenseComponent>
     );
 };
 
