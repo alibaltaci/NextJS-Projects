@@ -5,7 +5,7 @@ const ContactPage = () => {
   const { pageTitle, address, mailData, map } = contact
 
   return (
-    <section className="container mx-auto px-4 py-8 mt-16 ">
+    <section className="container mx-auto px-4 py-8 mt-16 h-screen">
       <h1 className="text-3xl font-bold mb-8">{ pageTitle }</h1>
       <div className="bg-white text-black shadow-md rounded-lg p-8 mb-8 flex flex-col md:flex-row">
         <div className="md:w-1/2 md:pr-4 mb-8 md:mb-0">

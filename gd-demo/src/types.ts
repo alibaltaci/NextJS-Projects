@@ -33,6 +33,7 @@ export interface ICategory {
     category: string
     icon: string
     color: string
+    onClick?: () => void;
 }
 
 export interface ICategoriesData {

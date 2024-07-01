@@ -5,7 +5,7 @@ import { IconReturner } from "./";
 const Footer = () => {
 
   return (
-    <footer className="bg-gray-800 py-8">
+    <footer className="bg-gray-800 py-8 bottom-0">
       <div className="container mx-auto flex justify-center items-center space-x-4">
         {footer.socialMedia.map((data, index) => {
           return (

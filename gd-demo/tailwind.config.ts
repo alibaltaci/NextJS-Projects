@@ -14,6 +14,9 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
           hero: 'url("/hero.jpg")'
       },
+      minHeight: {
+        'screen-minus-32px': 'calc(100vh - 32px)',
+      }
     },
   },
   plugins: [],
