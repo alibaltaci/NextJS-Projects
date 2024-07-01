@@ -5,7 +5,7 @@ import { notFound } from 'next/navigation';
 export async function generateStaticParams() {
     const paths = newsData.news.map((news) => ({
         // newsDetail: news.title,
-        newsDetail: encodeURIComponent(news.title)
+        newsDetail: encodeURIComponent(news.title.toLowerCase())
 
     }));
     // console.log("Generated Static Params:", paths);
@@ -16,7 +16,7 @@ const NewsDetailPage = ({ params }: { params: { newsDetail: string } }) => {
 
     const { newsDetail } = params;
     
-    const decodedTitle = decodeURIComponent(newsDetail); 
+    const decodedTitle = decodeURIComponent(newsDetail.toLowerCase()); 
     
     const newsItem = newsData.news.find((news) => news.title === decodedTitle);
 
