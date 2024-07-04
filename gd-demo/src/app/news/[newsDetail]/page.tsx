@@ -1,24 +1,25 @@
 import Image from 'next/image';
-import { newsData } from "../../../data.json";
+import { newsData } from "@/data.json";
 import { notFound } from 'next/navigation';
 
 export async function generateStaticParams() {
     const paths = newsData.news.map((news) => ({
         // newsDetail: news.title,
-        newsDetail: encodeURIComponent(news.title.toLowerCase())
-
+        // newsDetail: encodeURIComponent(news.title.toLowerCase())
+        newsDetail: news.id
     }));
     // console.log("Generated Static Params:", paths);
     return paths;
 }
 
-const NewsDetailPage = ({ params }: { params: { newsDetail: string } }) => {
+const NewsDetailPage = ({ params }: { params: { newsDetail: number } }) => {
 
     const { newsDetail } = params;
     
-    const decodedTitle = decodeURIComponent(newsDetail.toLowerCase()); 
+    // const decodedTitle = decodeURIComponent(newsDetail.toLowerCase())
     
-    const newsItem = newsData.news.find((news) => news.title === decodedTitle);
+    // const newsItem = newsData.news.find((news) => news.title === decodedTitle)
+    const newsItem = newsData.news.find(( news ) => news.id === newsDetail.toString() )
 
     if (!newsItem) {
         // return <div className='mt-16'>Haber bulunamadı</div>;

@@ -4,7 +4,7 @@ import { notFound } from 'next/navigation';
 
 export async function generateStaticParams() {
     const paths = reviewsData.reviews.map((review) => ({
-            reviewDetail: encodeURIComponent(review.title)
+            reviewDetail: review.id
     }));
     return paths
 }
@@ -13,13 +13,10 @@ export async function generateStaticParams() {
 const ReviewDetailPage = ({ params }: { params: { reviewDetail: string } }) => {
 
     const { reviewDetail } = params
-
-    const decodedTitle = decodeURIComponent(reviewDetail) 
     
-    const reviewItem = reviewsData.reviews.find((review) => review.title === decodedTitle)
+    const reviewItem = reviewsData.reviews.find((review) => review.id === reviewDetail )
 
     if (!reviewItem) {
-        // return <div className='mt-16'>Ürün bulunamadı</div>
         return notFound(); 
     }
 

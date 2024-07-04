@@ -65,6 +65,7 @@ export interface IIcons {
 // NEWS
 
 export interface INews {
+    id: string
     title: string;
     imgUrl: string;
     date: string;
@@ -85,6 +86,7 @@ export interface INews {
 // REVIEWS
 
 export interface IReview {
+    id: string
     title: string;
     imgUrl: string;
     date: string;

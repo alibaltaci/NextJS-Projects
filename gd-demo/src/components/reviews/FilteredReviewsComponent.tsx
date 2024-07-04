@@ -1,19 +1,17 @@
 "use client"
 
 import Image from "next/image";
-import { useSearchParams } from 'next/navigation'
 import { useEffect, useState } from "react";
-import { IReview, IReviewsData } from "@/types";
+import { IReview } from "@/types";
 import Link from "next/link";
+import { useReviewsContext } from "@/context/ReiviewsPageContext/ReviewsPageContext";
 
-export const FilteredReviewsComponent = ({reviews}:IReviewsData) => {
+export const FilteredReviewsComponent = () => {
 
-    const searchParams = useSearchParams()
+    const { reviewsData, categoryQuery  } = useReviewsContext()
 
-    const categoryQuery = searchParams.get("category") 
-
-    // const { reviews, pageTitle } = reviewsData
-
+    const { reviews } = reviewsData
+ 
     const [filteredData, setFilteredData] = useState<IReview[]>(reviews)
 
     useEffect( () => {
@@ -26,11 +24,10 @@ export const FilteredReviewsComponent = ({reviews}:IReviewsData) => {
         }
     }, [ categoryQuery, reviews ] )
 
-
         return <>
          {filteredData.map((review, index) => (
             <Link key={index} 
-                href={`/reviews/${review.title}`} 
+                href={`/reviews/${review.id}`} 
                 className="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
                 <div className="bg-white p-6 rounded-lg shadow-lg h-full flex flex-col justify-between">
                     <Image src={review.imgUrl} alt={review.title} width={400} height={200} className="w-full h-40 object-cover rounded-t-lg mb-4" />
