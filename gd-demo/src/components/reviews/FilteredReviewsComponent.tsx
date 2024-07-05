@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { IReview } from "@/types";
 import Link from "next/link";
-import { useReviewsContext } from "@/context/ReiviewsPageContext/ReviewsPageContext";
+import { useReviewsContext } from "@/context/ReviewsPageContext";
 
 export const FilteredReviewsComponent = () => {
 

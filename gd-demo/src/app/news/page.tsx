@@ -1,10 +1,15 @@
 import Link from "next/link"
 import { newsData } from "@/data.json";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Haberler"
+  }
 
 const NewsPage = () => {
   return (
-    <section className="container mx-auto px-4 py-8 mt-16">
+    <section className="container mx-auto px-4 py-8 mt-16 min-h-screen" >
     <h2 className="text-3xl font-bold mb-6">{newsData.pageTitle}</h2>
     <div className="flex flex-wrap -mx-4">
         {newsData.news.map((news, index) => (

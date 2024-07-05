@@ -6,8 +6,12 @@ import { Footer, Navbar } from "@/components";
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Gıda Dedektifi",
-  description: "Ne yediğinizi bilin",
+  title: {
+    absolute:"",
+    default:"Gıda Dedektifi - #NeYediğiniziBilin",
+    template:"%s - Gıda Dedektifi"
+  },
+  description: "2017'den bu yana etiket okuyoruz, tüketici bilincini geliştirmeye ve farkındalığı arttırmaya çalışıyoruz. #NeYediğiniziBilin",
 };
 
 export default function RootLayout({
@@ -18,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={dmSans.className}>
-        <main className="max-w-full mx-auto" >
+        <main className="max-w-full mx-auto min-h-screen" >
           <Navbar />
             {children}
           <Footer />

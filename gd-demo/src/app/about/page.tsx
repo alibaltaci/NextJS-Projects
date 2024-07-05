@@ -1,8 +1,13 @@
+import { Metadata } from 'next';
 import Image from 'next/image';
+
+export const metadata: Metadata = {
+  title: "Hakkımızda"
+}
 
 const AboutPage = () => {
   return (
-    <section className="container mx-auto px-4 py-8 mt-16">
+    <section className="container mx-auto px-4 py-8 mt-16 min-h-screen">
       <h1 className="text-3xl font-bold mb-8">Hakkımızda</h1>
       <div className="flex flex-col lg:flex-row items-center justify-center mb-8">
         
