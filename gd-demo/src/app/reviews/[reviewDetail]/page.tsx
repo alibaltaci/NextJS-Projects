@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { reviewsData } from "@/data.json";
 import { notFound } from 'next/navigation';
 import type { Metadata } from "next";
+import { SuspenseComponent } from '@/components';
 
 export async function generateStaticParams() {
     const paths = reviewsData.reviews.map((review) => ({
